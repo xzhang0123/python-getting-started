@@ -18,4 +18,6 @@ urlpatterns = [
     path("", hello.views.index, name="index"),
     path("db/", hello.views.db, name="db"),
     path("admin/", admin.site.urls),
+    path("signup/",hello.views.signupuser,name="signupuser"),
+    path("cal/",hello.views.cal,name="calculator")
 ]
